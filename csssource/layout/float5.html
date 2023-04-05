@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: #ffd800;
+        margin-right: 10px;
+        float: left;
+      }
+      .box1 {
+        width: 150px;
+        height: 150px;
+        background: red;
+        border: 1px solid black;
+      }
+      .clearfix::after{
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- float: 요소들이 떠 있는 개념적용(요소가 없는것처럼 처리) -->
+    <div class="clearfix">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+    <div class="box1">4</div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet illum
+      repellat aut voluptates officia, beatae voluptatem quis porro ipsa optio
+      alias quos necessitatibus voluptate asperiores corporis totam sint vero
+      laboriosam?
+    </p>
+  </body>
+</html>

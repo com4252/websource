@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* 기본적으로 body엔 약간의 공백이있음 */
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            background: #333;
+            overflow: hidden;
+            padding: 14px 16px;
+            padding-left: 0;
+        }
+        .menu li{
+            float: left;
+        }
+        .active{
+            background: red;
+        }
+        .menu li{
+            list-style: none;
+        }
+        li a{
+            padding: 14px 16px;
+            color: white;
+        }
+        a:hover{
+            background: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</body>
+</html>
