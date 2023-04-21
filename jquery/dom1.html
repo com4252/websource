@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header1">Header 1</h1>
+    <h2 id="header2">Header 2</h2>
+    <form action="">
+        <input type="text" name="username" id="username" />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        //DOM: html 문서를 자바스크립트에서 접근하는 방법
+        //     노드(element 노드, atrribute 노드, text 노드)
+        //     <h1 class='header'>헤더<h1>
+        //      element 노드 : h1, attribute 노드 : class='header', text 노드: 헤더
+
+        // DOM 접근
+        // 요소 찾기
+        // 1. 아이디로 찾기
+        // header1
+        const header1 = $("#header1");
+        console.log(header1);
+        // header1이 가지고 있는 텍스트 노드 값 접근
+        console.log(header1.text());
+        console.log(header1.html());
+
+        // 텍스트 노드 값 변경
+        // header1.Text = "<i>헤더1</i>";
+        // 텍스트 노드에 태그가 포함되는 경우 해석해서 표현
+        header1.html = "<i>헤더1<i/>";
+
+
+        // header2
+        const header2 = $("#header2");
+        console.log(header2);
+
+        // 텍스트 노드 변경: Header 2 with getElementById()
+        header2.text(header2.text() +" with getElementById()");
+
+        let username = $("#username");
+        console.log(username);
+        // form 요소의 텍스트 값들은 value 가져옴
+        console.log(username.val());
+    </script>
+</body>
+</html>
